@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 
 import unittest
-import tests_routes
+import test_routes
 
 prodTestSuite = unittest.TestSuite()
-prodTestSuite.addTest(unittest.makeSuite(tests_routes.RoutesTests))
+prodTestSuite.addTest(unittest.makeSuite(test_routes.RoutesTests))
 runner = unittest.TextTestRunner(verbosity=2)
 runner.run(prodTestSuite)

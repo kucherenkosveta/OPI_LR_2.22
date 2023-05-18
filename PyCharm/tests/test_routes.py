@@ -46,7 +46,7 @@ class RoutesTests(unittest.TestCase):
         self.assertTrue(Path(database_path).is_file())
         Path(database_path).unlink()
 
-    def test_add_human(self):
+    def test_add_way(self):
         """ Checking the addition."""
         database_path = "test.db"
         create_db(database_path)
